@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transacciones con Commit y Rollback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulación de Transacciones</h1>
+        <div id="transactions">
+            <h3>Operaciones disponibles</h3>
+            <button onclick="transaccionUno()">Transacción 1 (Commit)</button>
+            <button onclick="transaccionDos()">Transacción 2 (Rollback)</button>
+            <button onclick="transaccionTres()">Transacción 3 (Commit)</button>
+            <button onclick="transaccionCuatro()">Transacción 4 (Rollback)</button>
+        </div>
+        <div id="logs">
+            <h3>Logs de Transacciones</h3>
+            <ul id="log-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
